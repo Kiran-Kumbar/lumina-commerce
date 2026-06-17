@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #F6F2EC;
+  --color-surface: #FFFCF8;
+  --color-text-primary: #2D2926;
+  --color-text-secondary: #6B645D;
+  --color-text-muted: #9E958C;
+  --color-rose-gold: #B76E79;
+  --color-rose-gold-hover: #A15D68;
+  --color-champagne: #C9A47E;
+  --color-border: #E5DDD3;
+  --color-border-muted: #EDE7DF;
+  --color-dark: #2D2926;
+  --color-whatsapp: #25D366;
+
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 2px;
+
+  --shadow-card: 0 1px 2px rgba(45,41,38,0.06);
+  --shadow-card-hover: 0 1px 4px rgba(45,41,38,0.08);
+  --shadow-none: none;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F6F2EC;
+    --surface: #FFFCF8;
+    --text-primary: #2D2926;
+    --text-secondary: #6B645D;
+    --text-muted: #9E958C;
+    --rose-gold: #B76E79;
+    --rose-gold-hover: #A15D68;
+    --champagne-gold: #C9A47E;
+    --border: #E5DDD3;
+    --border-muted: #EDE7DF;
+    --whatsapp: #25D366;
+  }
+
+  html, body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+
+  p {
+    letter-spacing: 0.01em;
+    line-height: 1.75;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .matte-overlay {
+    mix-blend-mode: multiply;
+    background: rgba(198,178,152,0.08);
+  }
+  
+  .warm-filter {
+    filter: brightness(0.97) saturate(0.92) sepia(0.04);
+  }
+
+  .text-micro {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  /* No gradients allowed as per rules, using pure utility */
+  .no-gradient {
+    background-image: none !important;
+  }
 }

@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1>✨ Lumina: The Animated Commerce Experience ✨</h1>
+  <p>A high-end, editorial-style e-commerce interface driven by fluid animations and Next.js.</p>
 
-## Getting Started
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#tech-stack">Tech Stack</a> •
+    <a href="#getting-started">Getting Started</a>
+  </p>
+</div>
 
-First, run the development server:
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 About The Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Lumina** (formerly Ru & Ki) is a sophisticated frontend architecture designed for premium e-commerce brands and creative studios. Moving away from generic grid layouts, this project implements a highly polished, editorial-style interface featuring a matte-finish design system, custom staggered CSS grids, and fluid micro-interactions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The goal is to deliver a state-of-the-art, visually stunning user experience that feels incredibly responsive, alive, and unmistakably premium.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Features
 
-## Learn More
+- **Fluid Animations**: Scroll-linked image parallax, animated card reveals, and layout-shifting elements powered by Framer Motion.
+- **Editorial-Style Layouts**: Staggered 12-column CSS grids for dynamic and cinematic product showcases.
+- **Buttery Smooth Scrolling**: Integrated with Lenis for a native-feeling, physics-based scroll experience.
+- **Matte-Finish Design System**: Carefully curated color palettes, magnetic buttons, and typography that exude luxury and minimalism.
+- **Responsive Architecture**: Fully optimized across all device sizes without sacrificing visual fidelity.
+- **Modern Next.js Foundation**: Built on the latest Next.js App Router for optimal performance and SEO.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Smooth Scroll**: [Lenis](https://lenis.studiofreight.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Getting Started
 
-## Deploy on Vercel
+To get a local copy up and running, follow these simple steps.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+Make sure you have Node.js installed on your machine.
+- Node.js 18.x or higher
+- npm, yarn, pnpm, or bun
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your-username/lumina-commerce.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd lumina-commerce
+   ```
+3. Install dependencies
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm run dev
+   ```
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
