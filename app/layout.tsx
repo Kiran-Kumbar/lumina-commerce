@@ -17,11 +17,11 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Ru&Ki | We preserve memories",
+  title: "Lumina | We preserve memories",
   description: "Premium customized gifts and preserved memories.",
   icons: {
-    icon: "/image.png",
-    apple: "/image.png",
+    icon: "/image1.png",
+    apple: "/image1.png",
   },
 };
 
