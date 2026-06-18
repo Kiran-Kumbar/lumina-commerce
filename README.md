@@ -3,6 +3,10 @@
   <p>A high-end, editorial-style e-commerce interface driven by fluid animations and Next.js.</p>
 
   <p>
+    <a href="https://lumina-commerce-ten.vercel.app/"><strong>🔗 View Live Demo</strong></a>
+  </p>
+
+  <p>
     <a href="#features">Features</a> •
     <a href="#tech-stack">Tech Stack</a> •
     <a href="#getting-started">Getting Started</a>
@@ -48,7 +52,7 @@ Make sure you have Node.js installed on your machine.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your-username/lumina-commerce.git
+   git clone https://github.com/Kiran-Kumbar/lumina-commerce.git
    ```
 2. Navigate to the project directory
    ```sh
