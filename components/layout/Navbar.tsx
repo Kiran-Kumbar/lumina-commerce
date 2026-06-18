@@ -58,8 +58,8 @@ export default function Navbar() {
         />
         <div className="max-w-[1360px] mx-auto px-6 h-20 flex items-center justify-between relative z-10">
           <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center">
-              <img src="/image1.png" alt={CONSTANTS.STORE_NAME} className="h-24 w-auto object-contain scale-[1.6] origin-left mix-blend-multiply" />
+            <Link href="/" className="font-playfair text-2xl text-dark tracking-[0.2em] uppercase font-semibold hover:opacity-80 transition-opacity">
+              {CONSTANTS.STORE_NAME}
             </Link>
             
             <nav className="hidden md:flex items-center gap-6">
